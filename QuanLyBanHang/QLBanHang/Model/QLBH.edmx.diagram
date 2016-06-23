@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ea565c29cf384eda9273cb4c52d5375a" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLyBanHangModel.BOPHAN" Width="1.5" PointX="0.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.CHITIETPHIEUBANHANG" Width="1.5" PointX="12.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.CHITIETPHIEUCHUYENKHO" Width="1.5" PointX="9.75" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.CHITIETPHIEUNHAPHANG" Width="1.5" PointX="12.75" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.CHUCNANG" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.CONGNOCHI" Width="1.5" PointX="15" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.CONGNOTHU" Width="1.5" PointX="15" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.DONVITINH" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.HANGHOA" Width="1.5" PointX="7.5" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.KHACHHANG" Width="1.5" PointX="8.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.KHOHANG" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.KHUVUC" Width="1.5" PointX="3" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.NHACUNGCAP" Width="1.5" PointX="5.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.NHANVIEN" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.NHOMHANG" Width="1.5" PointX="5.25" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.PHANQUYEN" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.PHIEUBANHANG" Width="1.5" PointX="10.5" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.PHIEUCHUYENKHO" Width="1.5" PointX="10.5" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.PHIEUNHAPHANG" Width="1.5" PointX="10.5" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.TAIKHOAN" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.TONKHO" Width="1.5" PointX="12.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.TYGIA" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.VAITRO" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_NHANVIEN_MaBoPhan" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_CHITIETPHIEUBANHANG_MaHangHoa" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_CHITIETPHIEUBANHANG_MaPhieuBanHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_CONGNOTHU_MaChiTietPhieuBanHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHIEUCHUYENKHO_MaHangHoa" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_CHITIETPHIEUNHAPHANG_MaHangHoa" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_CHITIETPHIEUNHAPHANG_MaPhieuNhapHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_CONGNOTHU_MaChiTietPhieuNhapHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHANQUYEN_MaChucNang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_HANGHOA_MaDonVi" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_HANGHOA_MaKho" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_HANGHOA_MaNhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_HANGHOA_MaNhomHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_TONKHO_MaHangHoa" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_KHACHHANG_MaKhuVuc" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHIEUBANHANG_MaKhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_KHOHANG_NguoiQuanLy" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHIEUBANHANG_KhoXuat" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHIEUCHUYENKHO_KhoNhanHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHIEUCHUYENKHO_KhoXuatHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHIEUNHAPHANG_KhoNhap" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_TONKHO_MaKho" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_NHACUNGCAP_MaKhuVuc" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHIEUNHAPHANG_MaNhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_HPHIEUNHAPHANG_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_NHANVIEN_QuanLy" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHIEUBANHANG_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHIEUCHUYENKHO_NguoiChuyen" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHIEUCHUYENKHO_NguoiNhan" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_TAIKHOAN_MaNhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_PHANQUYEN_MaVaiTro" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.fk_TAIKHOAN_MaVaiTro" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
