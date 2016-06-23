@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QLBanHang.BUS.DanhMuc.KhuVuc;
 using QLBanHang.BUS;
+using QuanLyBanHang.Model;
 
 namespace QLBanHang.DanhMuc
 {

@@ -1,5 +1,6 @@
 ﻿using QLBanHang.Model;
 using QLBanHang.Model.DanhMuc;
+using QuanLyBanHang.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;

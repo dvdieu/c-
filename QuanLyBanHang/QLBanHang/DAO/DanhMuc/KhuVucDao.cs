@@ -9,6 +9,8 @@ using System.Data;
 using System.Drawing;
 using QLBanHang.Model;
 using System.Windows.Forms;
+using QuanLyBanHang.Model;
+
 namespace QLBanHang.DAO.DanhMuc.KhuVuc
 {
     class KhuVucDao

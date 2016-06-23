@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using QLBanHang.Model;
 using QLBanHang.DAO;
 using QLBanHang.DAO.DanhMuc.KhuVuc;
+using QuanLyBanHang.Model;
 
 namespace QLBanHang.BUS.DanhMuc.KhuVuc
 {

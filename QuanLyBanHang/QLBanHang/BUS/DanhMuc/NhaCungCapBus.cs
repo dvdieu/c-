@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using QLBanHang.DAO.DanhMuc;
 using QLBanHang.DAO;
+using QuanLyBanHang.Model;
 
 namespace QLBanHang.BUS.DanhMuc
 {
