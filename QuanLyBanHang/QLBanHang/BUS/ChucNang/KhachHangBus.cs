@@ -18,6 +18,7 @@ namespace QuanLyBanHang.BUS.ChucNang
         public List<string> LoadMaKH()
         {
             return dao.LoadMaKhachHang();
+
         }
     }
 }
