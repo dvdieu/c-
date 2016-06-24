@@ -17,7 +17,7 @@ using QLBanHang.BUS.DanhMuc.KhuVuc;
 using QuanLyBanHang.Model;
 
 namespace QLBanHang
-{ 
+{
     public partial class frmPhanMemQuanLyBanHang : Form
     {
         KhuVucBus buskv = new KhuVucBus();
@@ -76,7 +76,7 @@ namespace QLBanHang
 
         private void DoiMatKhau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-           frmDoiMatKhauHeThong fr = new frmDoiMatKhauHeThong();
+            frmDoiMatKhauHeThong fr = new frmDoiMatKhauHeThong();
             fr.ShowDialog();
         }
         private void NhatKy_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -172,7 +172,7 @@ namespace QLBanHang
             KHACHHANG kh = new KHACHHANG(); // lưu qua  hiển thị lên testbox
             kh.MaKhachHang = (string)grid_khachhang.GetRowCellValue(grid_khachhang.FocusedRowHandle, "MaKhachHang");
             kh.MaKhuVuc = (string)grid_khachhang.GetRowCellValue(grid_khachhang.FocusedRowHandle, "MaKhuVuc");
-       // dư  rôi     kh.MaSoThe = (string)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GhiChu");
+            // dư  rôi     kh.MaSoThe = (string)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GhiChu");
             kh.TenKhachHang = (string)grid_khachhang.GetRowCellValue(grid_khachhang.FocusedRowHandle, "TenKhachHang");
             kh.NguoiLienHe = (string)grid_khachhang.GetRowCellValue(grid_khachhang.FocusedRowHandle, "NguoiLienHe");
             kh.DiaChi = (string)grid_khachhang.GetRowCellValue(grid_khachhang.FocusedRowHandle, "DiaChi");
@@ -203,13 +203,11 @@ namespace QLBanHang
 
             KHACHHANG kh = new KHACHHANG();
             kh.MaKhachHang = (string)grid_khachhang.GetRowCellValue(grid_khachhang.FocusedRowHandle, "MaKhachHang");
-           
+
             buskh.XoaKhachhang_Bus(kh);
         }
 
-        private void pnMain_Paint(object sender, PaintEventArgs e)
-        {
-        }
+        
 
         private void simpleButton72_Click(object sender, EventArgs e)
         {
@@ -249,7 +247,7 @@ namespace QLBanHang
 
         private void btnSuaBoPhan_Click(object sender, EventArgs e)
         {
-            BOPHAN  bp= new BOPHAN(); // lưu qua  hiển thị lên testbox
+            BOPHAN bp = new BOPHAN(); // lưu qua  hiển thị lên testbox
             bp.MaBoPhan = (string)gridView7.GetRowCellValue(gridView7.FocusedRowHandle, "MaBoPhan");
             bp.TenBoPhan = (string)gridView7.GetRowCellValue(gridView7.FocusedRowHandle, "TenBoPhan");
             bp.GhiChu = (string)gridView7.GetRowCellValue(gridView7.FocusedRowHandle, "GhiChu");
@@ -311,7 +309,7 @@ namespace QLBanHang
             nh.TenNhomHang = (string)gridView4.GetRowCellValue(gridView4.FocusedRowHandle, "TenNhomHang");
             nh.GhiChu = (string)gridView4.GetRowCellValue(gridView4.FocusedRowHandle, "GhiChu");
             nh.ConQuanLyDonNhomHang = (bool)gridView4.GetRowCellValue(gridView4.FocusedRowHandle, "ConQuanLyDonNhomHang");
-          
+
             DanhMuc.frmSuaNhomHang NhomHang = new DanhMuc.frmSuaNhomHang(nh);
             NhomHang.ShowDialog();
         }
@@ -329,7 +327,7 @@ namespace QLBanHang
             dvt.MaDonVi = (string)gridView3.GetRowCellValue(gridView3.FocusedRowHandle, "MaDonVi");
             dvt.TenDonVi = (string)gridView3.GetRowCellValue(gridView3.FocusedRowHandle, "TenDonVi");
             dvt.GhiChu = (string)gridView3.GetRowCellValue(gridView3.FocusedRowHandle, "GhiChu");
-           dvt.ConQuanLyDonViTinh= (bool)gridView3.GetRowCellValue(gridView3.FocusedRowHandle, "ConQuanLyDonViTinh");
+            dvt.ConQuanLyDonViTinh = (bool)gridView3.GetRowCellValue(gridView3.FocusedRowHandle, "ConQuanLyDonViTinh");
             DanhMuc.frmSuaDonViTinh DonViVitinh = new DanhMuc.frmSuaDonViTinh(dvt);
             DonViVitinh.ShowDialog();
         }
@@ -350,12 +348,12 @@ namespace QLBanHang
             kh.GhiChu = (string)gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "GhiChu");
             kh.Fax = (string)gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "Fax");
             kh.DienThoai = (string)gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "DienThoai");
-            kh.Email= (string)gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "Email");
+            kh.Email = (string)gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "Email");
             kh.KyHieu = (string)gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "KyHieu");
             kh.NguoiQuanLy = (string)gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "NguoiQuanLy");
             kh.NguoiLienHe = (string)gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "NguoiLienHe");
             kh.ConQuanLyKhoHang = (bool)gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "ConQuanLyKhoHang");
-            DanhMuc.frmSuaKhoHang  Khohang = new DanhMuc.frmSuaKhoHang(kh);
+            DanhMuc.frmSuaKhoHang Khohang = new DanhMuc.frmSuaKhoHang(kh);
             Khohang.ShowDialog();
         }
 
@@ -368,7 +366,7 @@ namespace QLBanHang
         private void btnSuaNhaCC_Click(object sender, EventArgs e)
         {
 
-            NHACUNGCAP  ncc = new NHACUNGCAP(); // lưu qua  hiển thị lên testbox
+            NHACUNGCAP ncc = new NHACUNGCAP(); // lưu qua  hiển thị lên testbox
             ncc.MaNhaCungCap = (string)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "MaNhaCungCap");
             ncc.TenNhaCungCap = (string)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "TenNhaCungCap");
             ncc.NguoiLienHe = (string)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "NguoiLienHe");
@@ -383,11 +381,11 @@ namespace QLBanHang
             ncc.TenNganHang = (string)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "TenNganHang");
             ncc.MaSoThue = (string)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "MaSoThue");
             ncc.MaKhuVuc = (string)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "MaKhuVuc");
-        
-                ncc.NoHienTai = (decimal)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "NoHienTai");
-                ncc.ChietKhau = (decimal)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "ChietKhau");
-                ncc.GioiHanNo = (decimal)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "GioiHanNo");
-            
+
+            ncc.NoHienTai = (decimal)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "NoHienTai");
+            ncc.ChietKhau = (decimal)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "ChietKhau");
+            ncc.GioiHanNo = (decimal)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "GioiHanNo");
+
             ncc.ConQuanLyNhaCungCap = (bool)gridView10.GetRowCellValue(gridView10.FocusedRowHandle, "ConQuanLyNhaCungCap");
             DanhMuc.frmSuaNhaCungCap NhaCC = new DanhMuc.frmSuaNhaCungCap(ncc);
             NhaCC.ShowDialog();
@@ -416,24 +414,24 @@ namespace QLBanHang
         {
             tabKhachHang.PageVisible = true;
             AllTab.SelectedTabPage = tabKhachHang;
-            grrid_khachhang.DataSource = buskh.Formload_khachhangbus();         
+            grrid_khachhang.DataSource = buskh.Formload_khachhangbus();
         }
 
-      
+
 
         private void NhaCungCap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             tabNhacc.PageVisible = true;
             AllTab.SelectedTabPage = tabNhacc;
             grid_nhacungcap.DataSource = busncc.Formload_NhaCungCapbus();
-            
+
         }
 
         private void KhoHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             tabKhoHang.PageVisible = true;
             AllTab.SelectedTabPage = tabKhoHang;
-            grid_khohang.DataSource = buxkhoh.Formload_khoHangbus();   
+            grid_khohang.DataSource = buxkhoh.Formload_khoHangbus();
         }
 
         private void DonViTinh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -442,7 +440,7 @@ namespace QLBanHang
             AllTab.SelectedTabPage = tabDonViTinh;
 
             grid_donvitinh.DataSource = busdvt.Formload_DoViTinhbus();
-            
+
             ///,,,,,,,
         }
 
@@ -450,17 +448,17 @@ namespace QLBanHang
         {
             tabNhomHang.PageVisible = true;
             AllTab.SelectedTabPage = tabNhomHang;
-             grid_nhomhang.DataSource = busNh.Formload_NhomHangbus();          
+            grid_nhomhang.DataSource = busNh.Formload_NhomHangbus();
         }
 
         private void HangHoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             tabHangHoa.PageVisible = true;
-           
-            AllTab.SelectedTabPage = tabHangHoa;        
 
-                grid_hanghoa.DataSource = bushh.Formload_HangHoabus();
-            
+            AllTab.SelectedTabPage = tabHangHoa;
+
+            grid_hanghoa.DataSource = bushh.Formload_HangHoabus();
+
         }
 
         private void InMaVach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -474,8 +472,8 @@ namespace QLBanHang
             TabTyGia.PageVisible = true;
             AllTab.SelectedTabPage = TabTyGia;
             grid_tygia.DataSource = bustt.Formload_TyGiabus();
-            
-            
+
+
         }
 
         private void BoPhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -488,8 +486,8 @@ namespace QLBanHang
         private void NhanVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             tabNhanVien.PageVisible = true;
-            AllTab.SelectedTabPage = tabNhanVien;        
-                grid_nhanvien.DataSource = busnv.Formload_NhanVienbus();    
+            AllTab.SelectedTabPage = tabNhanVien;
+            grid_nhanvien.DataSource = busnv.Formload_NhanVienbus();
         }
 
         private void btnDong_Click(object sender, EventArgs e)
@@ -552,25 +550,31 @@ namespace QLBanHang
 
         }
 
-       
+
         // Phần chức Năng 
-      
+
         private void btnMuaHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             tabMuaHang.PageVisible = true;
             AllTab.SelectedTabPage = tabMuaHang;
+            pnMain.Controls.Clear();
+            PhieuNhapHangControl cont = new PhieuNhapHangControl();
+            cont.Show();
+            cont.Dock = DockStyle.Fill;
+            pnMain.Controls.Add(cont);
         }
 
-        private void btnBanHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            tabBanHang.PageVisible = true;
-            AllTab.SelectedTabPage = tabBanHang;
-        }
+       
 
         private void btnTonKho_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             tabTonKho.PageVisible = true;
             AllTab.SelectedTabPage = tabTonKho;
+            pnMain.Controls.Clear();
+            TonKhoControl control = new TonKhoControl();
+            control.Show();
+            control.Dock = DockStyle.Fill;
+            pnMain.Controls.Add(control);
         }
 
         private void btnChuyenKho_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -645,7 +649,7 @@ namespace QLBanHang
             frmKhachHang kh = new frmKhachHang();
             kh.ShowDialog();
         }
-    
+
 
         private void btnKhoHang_BanHang_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
@@ -673,7 +677,7 @@ namespace QLBanHang
 
         private void btnxuat_khuvuc_Click(object sender, EventArgs e)
         {
-            
+
         }
         private void btnnaplai_khuvuc_Click(object sender, EventArgs e)
         {
@@ -706,7 +710,7 @@ namespace QLBanHang
 
         private void simpleButton44_Click(object sender, EventArgs e)
         {
-            grid_nhomhang.DataSource = busNh.Formload_NhomHangbus(); 
+            grid_nhomhang.DataSource = busNh.Formload_NhomHangbus();
         }
 
         private void btnNaplai_Click(object sender, EventArgs e)
@@ -735,7 +739,7 @@ namespace QLBanHang
 
         private void simpleButton16_Click(object sender, EventArgs e)
         {
-            grrid_khachhang.DataSource = buskh.Formload_khachhangbus();     
+            grrid_khachhang.DataSource = buskh.Formload_khachhangbus();
         }
 
         private void simpleButton24_Click(object sender, EventArgs e)
@@ -764,7 +768,7 @@ namespace QLBanHang
 
         private void simpleButton57_Click(object sender, EventArgs e)
         {
-            grid_nhanvien.DataSource = busnv.Formload_NhanVienbus();    
+            grid_nhanvien.DataSource = busnv.Formload_NhanVienbus();
         }
 
         private void btnXoaNV_Click(object sender, EventArgs e)
@@ -786,7 +790,47 @@ namespace QLBanHang
             bushh.XoaHangHoa_Bus(hh);
         }
 
-       
+        private void btnPhieuNhapHang_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            pnMain.Controls.Clear();
+            PhieuNhapHangControl cont = new PhieuNhapHangControl();
+            cont.Show();
+            cont.Dock = DockStyle.Fill;
+            pnMain.Controls.Add(cont);
+        }
 
+        private void btnBanHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            tabBanHang.PageVisible = true;
+            AllTab.SelectedTabPage = tabBanHang;
+            panel1.Controls.Clear();
+            PhieuBanHangControl control = new PhieuBanHangControl();
+            control.Dock = DockStyle.Fill;
+            panel1.Controls.Add(control);
+        }
+
+        private void btnPhieuBanHang_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            panel1.Controls.Clear();
+            PhieuBanHangControl control = new PhieuBanHangControl();
+            control.Dock = DockStyle.Fill;
+            panel1.Controls.Add(control);
+        }
+
+        private void btnTheoChungTu_BanHang_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            panel1.Controls.Clear();
+            TheoChungTuControl control = new TheoChungTuControl();
+            control.Dock = DockStyle.Fill;
+            panel1.Controls.Add(control);
+        }
+
+        private void btnTheoHangHoa_BanHang_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            panel1.Controls.Clear();
+            TheoHangHoaControl control = new TheoHangHoaControl();
+            control.Dock = DockStyle.Fill;
+            panel1.Controls.Add(control);
+        }
     }
 }

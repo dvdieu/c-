@@ -83,6 +83,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\ChucNang\KhachHangBus.cs" />
     <Compile Include="BUS\DanhMuc\BoPhanBus.cs" />
     <Compile Include="BUS\DanhMuc\DonViTinhBus.cs" />
     <Compile Include="BUS\DanhMuc\HangHoaBus.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="BUS\DanhMuc\NhomHangBus.cs" />
     <Compile Include="BUS\DanhMuc\TienTeBus.cs" />
     <Compile Include="BUS\DanhMuc\MaLuuBus.cs" />
+    <Compile Include="DAO\ChucNang\KhachHangDao.cs" />
     <Compile Include="DAO\DanhMuc\MaLuuDao.cs" />
     <Compile Include="Model\BOPHAN.cs">
       <DependentUpon>QLBH.tt</DependentUpon>
@@ -111,6 +113,7 @@
     <Compile Include="Model\CHUCNANG.cs">
       <DependentUpon>QLBH.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\ChucNang\KhachHang.cs" />
     <Compile Include="Model\CONGNOCHI.cs">
       <DependentUpon>QLBH.tt</DependentUpon>
     </Compile>
@@ -1008,6 +1011,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
